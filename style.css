@@ -5,14 +5,17 @@
 }
 
 html {
+  height: 100vh;
   font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #153677, #4e085f);
 }
 
 .row {
-  height: 100vh;
+  max-width: 1460px;
+  width: 100%;
   margin: 0 auto;
-  background: linear-gradient(135deg, #153677, #4e085f);
 }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -158,6 +161,123 @@ line-height: 160%;
   color: #fff;
 }
 
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__text {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  .header__btn {
+    margin-top: 20px;
+  }
+
+  .article__header {
+    font-size: 36px;
+  }
+
+  .article__text {
+    font-size: 16px;
+  }
+
+  .footer__btn .footer__btn--blue,
+  .footer__btn .footer__btn--white,
+  .footer__btn .footer__btn--rose {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+  
+  .hero-block__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  .header__text {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  .header__btn {
+    margin-top: 20px;
+  }
+
+  .article__header {
+    font-size: 36px;
+  }
+
+  .article__text {
+    font-size: 16px;
+  }
+
+  .footer__btn .footer__btn--blue,
+  .footer__btn .footer__btn--white,
+  .footer__btn .footer__btn--rose {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .main {
+    gap: 50px;
+  }
+
+  .hero-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main {
+    gap: 80px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
 /*
 
 * {
