@@ -28,11 +28,13 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
+  align-self: center;
+  margin-bottom: 18px;
+
 }
 
-.header__text {
-  display: inline;
-  margin-top: 48px;
+.header__logo {
+  margin-top: 27px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 1.6rem;
@@ -46,13 +48,21 @@ html {
   margin-top: 34px;
 }
 
-.btn{
+.btn  {
+  font-family: 'Outfit';
+  letter-spacing: 1.2px;
   font-weight: 600;
   font-size: 17px;
   color: #EFEFEF;
   background: linear-gradient(88.02deg, #0075FF -27.72%, #0075FF 119.65%);
   border-radius: 10px;
   padding: 10px 12px;
+}
+
+.btn a { 
+  color: #EFEFEF;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .border {
@@ -87,10 +97,12 @@ line-height: 110%;
 .article__text {
   color: rgba(21, 236, 211, 0.8);
   font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 160%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .article__btn {
@@ -130,13 +142,19 @@ line-height: 160%;
 
 }
 
-.footer__buttons {
+.footer__buttons  {
+  text-decoration: none;
   margin-top: 10px;
   display: flex;
   gap: 20px;
 }
 
-.footer__btn  .footer__btn--blue {
+.footer__buttons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__btn   .footer__btn--blue {
   background-color: #0075FF;
   color: #fff;
   border-radius: 5px;
@@ -151,6 +169,12 @@ line-height: 160%;
   background-color: #fff;
   color: #111;
 }
+
+.footer__btn--white a {
+  color: #111;
+}
+
+
 
 .footer__btn .footer__btn--rose {
   border-radius: 5px;
