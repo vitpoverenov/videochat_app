@@ -7,7 +7,7 @@
 html {
   height: 100%;
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(135deg, #153677 30%, #4e085f);
+  background: linear-gradient(135deg, #153677, #4e085f);
 }
 
 .row {
@@ -34,10 +34,10 @@ html {
 }
 
 .header__logo {
-  margin-top: 27px;
+  margin-top: 37px;
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background-image: linear-gradient(90deg, #FF6F6F, #DE14FF); 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -50,20 +50,22 @@ html {
 
 .btn  {
   font-family: 'Outfit';
-  letter-spacing: 1.2px;
+  letter-spacing: 2px;
   font-weight: 600;
   font-size: 17px;
   color: #EFEFEF;
   background: linear-gradient(88.02deg, #0075FF -27.72%, #0075FF 119.65%);
   border-radius: 10px;
+  border: none;
   padding: 10px 12px;
+  line-height: 21px;
 }
 
 .btn a { 
   font-size: smaller;
   color: #EFEFEF;
   text-decoration: none;
-  cursor: pointer;
+  cursor: progress;
 }
 
 .border {
@@ -144,17 +146,28 @@ html {
 }
 
 .footer article {
-  position: absolute;
+  padding: 10px 0px;
   background: linear-gradient(93.61deg, #15ECD2 2.99%, #FFEDAD 101.22%);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   text-align: center;
-
 }
 
+.footer article h2 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer article p {
+  color: #15ECD3CC;
+}
 .footer__buttons  {
   position: absolute;
-  bottom: -295px;
+  bottom: -115px;
   text-decoration: none;
   margin-top: 10px;
   display: flex;
@@ -188,12 +201,140 @@ html {
 
 .footer__btn .footer__btn--rose {
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 11px 30px;
   font-size: 1.2rem;
-  background-color: #C91F99;
+  background: linear-gradient(0deg, #E019F8, #E019F8),
+linear-gradient(0deg, rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.37));
+
   color: #fff;
 }
 
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__text {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  .header__btn {
+    margin-top: 20px;
+  }
+
+  .article__header {
+    font-size: 36px;
+  }
+
+  .article__text {
+    font-size: 16px;
+  }
+
+  .footer__btn .footer__btn--blue,
+  .footer__btn .footer__btn--white,
+  .footer__btn .footer__btn--rose {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+
+  
+  
+  .hero-block__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  .header__text {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+  }
+
+  .header__btn {
+    margin-top: 30px;
+  }
+
+  .article__header {
+    font-size: 36px;
+  }
+
+  .article__text {
+    font-size: 16px;
+  }
+
+  .footer__btn .footer__btn--blue,
+  .footer__btn .footer__btn--white,
+  .footer__btn .footer__btn--rose {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .footer__btn .footer__btn--rose {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .main {
+    gap: 50px;
+  }
+
+  .hero-block  {
+    display: grid;
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main {
+    gap: 80px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
 /* Media Queries */
 
 @media (max-width: 768px) {
