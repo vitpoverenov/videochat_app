@@ -5,8 +5,9 @@
 }
 
 html {
+  height: 100%;
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(135deg, #153677, #4e085f);
+  background: linear-gradient(135deg, #153677 30%, #4e085f);
 }
 
 .row {
@@ -117,24 +118,33 @@ html {
 }
 
 .hero-block {
+  max-width: 30rem;
   margin-top: 47px;
   border-radius: 10px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.hero-block img {
+  margin-left: 50px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /*FOOTER SECTION*/
 
 .footer {
-  bottom: 0;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 1.5rem;
 }
 
 .footer article {
+  position: absolute;
   background: linear-gradient(93.61deg, #15ECD2 2.99%, #FFEDAD 101.22%);
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
@@ -143,7 +153,8 @@ html {
 }
 
 .footer__buttons  {
-  position: relative;
+  position: absolute;
+  bottom: -295px;
   text-decoration: none;
   margin-top: 10px;
   display: flex;
